@@ -1,0 +1,27 @@
+{
+  "name": "react-express",
+  "version": "1.0.0",
+  "description": "A starter pack project for reactJs and node-express",
+  "main": "/bin/www",
+  "scripts": {
+    "start": "SET NODE_ENV=development & node ./bin/www",
+    "dev": "SET NODE_ENV=development & supervisor ./bin/www",
+    "start:dev": "concurrently \"npm run dev\" \"cd ../react-client && npm start\""
+  },
+  "author": "Elvis Sautet",
+  "license": "MIT",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "concurrently": "^7.5.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "helmet": "^6.0.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
